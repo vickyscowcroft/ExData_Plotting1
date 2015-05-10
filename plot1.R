@@ -13,7 +13,7 @@ dataSubest <- subset(data, data$Date =='1/2/2007' | data$Date == '2/2/2007')
 
 ## Make histogram with red bars, correct xlabel and title
 ## cex changes the font size
-hist(dataSubset$Global_active_power, col='red', xlab='Global Active Power (kilowatts)', main="Global Active Power", cex.axis=0.8, cex.lab=0.8, cex.main=0.9)
+hist(dataSubset$Global_active_power, col='red', xlab='Global Active Power (kilowatts)', main="Global Active Power")
 
 ## Save output to .png file
 dev.copy(png, file = "plot1.png", width=480, height=480, units='px')
