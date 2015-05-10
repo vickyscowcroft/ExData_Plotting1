@@ -12,9 +12,9 @@ data <- read.table("household_power_consumption.txt", sep=';', header=TRUE, na.s
 dataSubest <- subset(data, data$Date =='1/2/2007' | data$Date == '2/2/2007')
 
 ## Make histogram with red bars, correct xlabel and title
-hist(dataSubset$Global_active_power, col='red', xlab='Global Active Power (kilowatts)', main="Global Active Power")
-
+## cex changes the font size
 hist(dataSubset$Global_active_power, col='red', xlab='Global Active Power (kilowatts)', main="Global Active Power", cex.axis=0.8, cex.lab=0.8, cex.main=0.9)
+
 ## Save output to .png file
 dev.copy(png, file = "plot1.png", width=480, height=480, units='px')
 
