@@ -4,17 +4,15 @@
 library(dplyr)
 library(lubridate)
 
-#setwd("ExData_Plotting1")
-
 ## Note that in this dataset missing values are coded as ?.
 # Read in the data, using the correct separator for the file and telling read.table about the file header
-#data <- read.table("household_power_consumption.txt", sep=';', header=TRUE, na.strings='?')
+data <- read.table("household_power_consumption.txt", sep=';', header=TRUE, na.strings='?')
 
 ## We will only be using data from the dates 2007-02-01 and 2007-02-02.
-#dataSubset <- subset(data, data$Date =='1/2/2007' | data$Date == '2/2/2007')
+dataSubset <- subset(data, data$Date =='1/2/2007' | data$Date == '2/2/2007')
 
 ## Conmbine the date and time columns to one dateTime variable
-#dateTime = strptime(paste(dataSubset$Date, dataSubset$Time), format="%d/%m/%Y %H:%M:%S")
+dateTime = strptime(paste(dataSubset$Date, dataSubset$Time), format="%d/%m/%Y %H:%M:%S")
 
 ## Set up the 2x2 lattice
 par(mfrow = c(2, 2))
