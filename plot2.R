@@ -15,11 +15,11 @@ dataSubset <- subset(data, data$Date =='1/2/2007' | data$Date == '2/2/2007')
 ## Conmbine the date and time columns to one dateTime variable
 dateTime = strptime(paste(dataSubset$Date, dataSubset$Time), format="%d/%m/%Y %H:%M:%S")
 
+## Save to plot2.png
+png(file = "plot2.png", width=480, height=480, units='px')
 ## Plot dateTime vs. global active power
 plot(dateTime, dataSubset$Global_active_power, type='l', ylab="Global Active Power (kilowatts)", xlab="")
 
-## Save to plot2.png
-dev.copy(png, file = "plot2.png", width=480, height=480, units='px')
 
 ## Close the output device
 dev.off()
