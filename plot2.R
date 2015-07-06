@@ -1,3 +1,4 @@
+## July 6 2015
 ## Plot 2 --Time vs Global active power
 ## Construct the plot and save it to a PNG file with a width of 480 pixels and a height of 480 pixels
 ## Output to plot2.png

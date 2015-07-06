@@ -1,3 +1,4 @@
+## July 6 2015
 ## Plot 1 -- histogram of Global Active Power
 ## Construct the plot and save it to a PNG file with a width of 480 pixels and a height of 480 pixels
 ## Output to plot1.png

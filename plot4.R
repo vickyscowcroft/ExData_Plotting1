@@ -1,3 +1,4 @@
+## July 6 2015
 ## Plot 4 -- 4 plot array with plot 2 and plot 3 in left hand column, voltage vs. datetime in topright, global_reactive_power vs. datetime in bottomright
 ## Construct the plot and save it to a PNG file with a width of 480 pixels and a height of 480 pixels
 ## Output to plot3.png
