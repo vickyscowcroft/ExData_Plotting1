@@ -1,4 +1,4 @@
-## July 6 2015
+## Oct 8 2015
 ## Plot 3 -- Time vs. energy sub metering
 ## Construct the plot and save it to a PNG file with a width of 480 pixels and a height of 480 pixels
 ## Output to plot3.png
